@@ -5,7 +5,6 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import io.reactivex.SingleObserver
@@ -60,7 +59,7 @@ class HintsAdapter(private val deleteHintsObserver: SingleObserver<String>) : Re
         RecyclerView.ViewHolder(viewRoot) {
         val rootView = viewRoot
         val text: TextView = viewRoot.findViewById(R.id.tvHint)
-        val deleteImage: ImageView = viewRoot.findViewById(R.id.ivDeleteHint)
+        val deleteImage: ViewGroup = viewRoot.findViewById(R.id.containerDeleteHint)
     }
 
 }
